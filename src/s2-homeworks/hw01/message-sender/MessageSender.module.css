@@ -1,0 +1,53 @@
+.sendForm {
+    display: flex;
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+    gap: 44px;
+    box-sizing: border-box;
+}
+
+.textarea {
+    flex: 1;                        /* чтобы занимать всё доступное пространство */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    opacity: 0.9;
+    resize: none;                   /* отключаем возможность растягивать textarea */
+    border: none;                   /* убираем границу браузера */
+    outline: none;                  /* убираем outline при фокусе */
+    border-radius: 20px;
+    padding: 8px 16px;
+    width: 976px; /* внутренние отступы */
+    height: 40px;                   /* фиксированная высота */
+    background: #f5f7fb;
+    box-shadow:
+            0 1px 2px 0 rgba(29, 33, 38, 0.1),
+            0 5px 20px 0 rgba(29, 33, 38, 0.03);
+    box-sizing: border-box;
+}
+
+.button {
+    margin-left: 16px;           /* отступ слева от textarea */
+    margin-bottom: 16px;           /* отступ слева от textarea */
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background: #0066cc;         /* пример: синий цвет кнопки */
+    color: #fff;                 /* белый текст */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button:hover {
+    background: #005bb5;
+}
+.button:active {
+    background: #004999;
+}
